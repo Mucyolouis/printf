@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int positiveNumber = 42;
+    int negativeNumber = -42;
+
+    // Using the + flag
+    printf("Using the + flag:\n");
+    printf("%+d\n", positiveNumber);  // Prints "+42"
+    printf("%+d\n", negativeNumber);  // Prints "-42"
+
+    // Using the space flag
+    printf("\nUsing the space flag:\n");
+    printf("% d\n", positiveNumber);  // Prints " 42"
+    printf("% d\n", negativeNumber);  // Prints "-42"
+
+    // Using the # flag
+    printf("\nUsing the # flag:\n");
+    printf("%#x\n", 42);  // Prints "0x2a" (hexadecimal with 0x prefix)
+    printf("%#o\n", 42);  // Prints "052" (octal with 0 prefix)
+
+    return 0;
+}
+
